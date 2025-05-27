@@ -26,12 +26,15 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicou()" onmouseenter="entrada()" onmouseout="saida()">
+    <div id="area">
         interaja...
     </div>
 
     <script>
-        var a = window.document.getElementById('area')
+        var a = indow.document.getElementById('area')
+        a.addEventListener('click', clicou)
+        a.addEventListener('mouseenter', entrada)
+        a.addEventListener('mouseout',saida)
            function clicou() {
               a.innerText = 'Falei Para nao clicar'
               a.style.backgroundColor = 'red'
@@ -45,7 +48,7 @@
                a.style.color = 'black'    
            }
 
-           function entrada() {
+           function Entrada() {
                a.innerText = 'NAO CLICK'
                a.style.backgroundColor = 'yellow'
                a.style.color = 'black'

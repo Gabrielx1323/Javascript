@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+
+        body {
+            height: 97vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        div#area {
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            display: flex;
+           justify-content: center; 
+           align-items: center;
+           font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicou()" onmouseenter="entrada()" onmouseout="saida()">
+        interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+           function clicou() {
+              a.innerText = 'Falei Para nao clicar'
+              a.style.backgroundColor = 'red'
+              a.style.color = 'black'
+
+           }
+              
+           function saida() {
+               a.innerText = 'click'  
+               a.style.backgroundColor = 'green'
+               a.style.color = 'black'    
+           }
+
+           function entrada() {
+               a.innerText = 'NAO CLICK'
+               a.style.backgroundColor = 'yellow'
+               a.style.color = 'black'
+           }
+    </script>
+</body>
+</html>

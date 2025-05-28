@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De onde voce e</title>
+</head>
+<body>
+
+    <h1>Where are you from?: </h1> <input type="text" name="txt" id="Itxt">
+    <input type="button" value="Descobrir" onclick="verificar()">
+     <script>
+              function verificar() {
+                var from = window.document.getElementById('Itxt').value.trim()
+                 if (from.toLowerCase() === "brasil") {
+                    window.alert('Voce e Brazuca')
+                 } else {
+                    window.alert('voce e gringo')
+                 }
+              }
+     </script>
+</body>
+</html>

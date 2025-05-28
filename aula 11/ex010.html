@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site De Transinto</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Velocidade do carro: </p> <input type="number" name="num" id="Inum">
+    <input type="button" value="Enviar" onclick="calcular()">
+
+    </div>
+
+    <script>
+        
+         function calcular() {
+             var txt = window.document.getElementById('Inum')
+             var vel = Number(txt.value)
+
+                      if (vel > 80) {
+              window.alert('Voce Foi Multado, Otario')
+         } else {
+              window.alert('ta joia')
+         }
+         }
+    </script>
+</body>
+</html>

@@ -7,6 +7,6 @@ console.log (`Agora sao ${hora} horas.`)
     console.log('Bom Dia!')
 } else if (hora <= 18) {
     console.log(`Boa Tarde!`)
-} else if (hora >= 17 && 24){
+} else if (hora >= 17 && 23){
     console.log(`Boa Noite!`)
 }

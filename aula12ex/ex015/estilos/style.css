@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-header {
-
-}
-h1 {
-
-}
-
 body {
     width: 98vw;
     height: 96vh;
@@ -25,7 +18,7 @@ section {
    height: 400px;
    display: flex;
    align-items: flex-start;
+   flex-flow: column nowrap;
 }
-
 
 

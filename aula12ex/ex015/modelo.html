@@ -11,9 +11,23 @@
 <h1>Detector de idade</h1>
 </header>
 <section> 
-    <input type="date" name="date" id="Idate"> <br>
-    <input type="submit" value="Eviar" onclick="vrf()">
-    <p id="msg"></p>    
+<div>
+ <p>Ano de Nascimento:
+    <input type="number" name="txtano" id="txtano" min="0" required>
+ </p>
+ <p>Sexo: 
+    <input type="radio" name="radsex" id="mas">
+    <label for="mas">Gosta De Femea</label>
+    <input type="radio" name="radsex" id="fem">
+    <label for="fem">Gosta De Macho</label>
+</p>
+<p>
+    <input type="button" value="Verificar" onclick="vrf()">
+ </p>
+</div>
+<div id="res">
+    Prencha os dados acima para ver o resultado
+</div>
 </section>
 <script src="script.js"></script>
 </body>

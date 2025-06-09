@@ -3,7 +3,7 @@ var data = new Date()
 var ano = data.getFullYear()
 var fano = document.getElementById('txtano')
 var res = document.getElementById('res')
-if (fano.value.legth == 0 || Number(fano.value) > ano) {
+if (fano.value.length == 0 || Number(fano.value) > ano) {
     window.alert('[ERRO] Verifique os dados e tente novamente!')
 }  else {
     var fsex = document.getElementsByClassName('radsex')
@@ -12,26 +12,26 @@ if (fano.value.legth == 0 || Number(fano.value) > ano) {
     var img = document.createElement('img')
     img.setAttribute('id', 'foto')
     if (fsex[0].checked) {
-        genero = 'Gosta De Femea'
+        genero = 'macho'
     if (idade >= 0 && idade < 10) {
-        img.setAttribute('src', 'baby-male.jpg')
+        img.setAttribute('src', 'Imagens/baby-male.jpg')
     } else if (idade < 21) {
-        img.setAttribute('src', 'young-male.jpg')
+        img.setAttribute('src', 'Imagens/young-male.jpg')
     } else if (idade < 50) {
-        img.setAttribute('src', 'adult-male.jpg')
+        img.setAttribute('src', 'Imagens/adult-male.jpg')
     } else  {
-       img.setAttribute('src', 'elder-male.jpg') 
+       img.setAttribute('src', 'Imagens/elder-male.jpg') 
     }
 } else if (fsex[1].checked) {
-    genero = 'Gosta De Macho'
+    genero = 'femea'
     if (idade >= 0 && idade < 10) {
-    img.setAttribute('src', 'baby-male.jpg')  
+    img.setAttribute('src', 'Imagens/baby-female.jpg')  
     } else if (idade < 21) {
-      img.setAttribute('src', 'young-male.jpg')  
+      img.setAttribute('src', 'Imagens/young-female.jpg')  
     } else if (idade < 50) {
-       img.setAttribute('src', 'adult-male.jpg')
+       img.setAttribute('src', 'Imagens/adult-female.jpg')
     } else {
-       img.setAttribute('src', 'elder-male.jpg')
+       img.setAttribute('src', 'Imagens/elder-female.jpg')
     }
 }
 res.style.textAlign = 'center'

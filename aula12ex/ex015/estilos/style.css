@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 body {
+    padding: 0px;
+    margin: 0px;
     width: 98vw;
     height: 96vh;
     background-color: rgb(97, 97, 230);
@@ -13,12 +15,26 @@ body {
 section {
    background-color: white;
    border-radius: 10px;
-   padding: 15px;
+   padding: 20px;
    width: 500px;
-   height: 400px;
+   height: 450px;
    display: flex;
-   align-items: flex-start;
+   align-items: center;
    flex-flow: column nowrap;
 }
+
+#res {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#foto {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
 
 
